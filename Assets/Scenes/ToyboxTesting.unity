@@ -689,6 +689,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedKey
       objectReference: {fileID: 0}
+    - target: {fileID: 2641378627713027841, guid: d9860a42aa82a4648a7704c24519452a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Button
+      objectReference: {fileID: 0}
     - target: {fileID: 2641378627713027846, guid: d9860a42aa82a4648a7704c24519452a,
         type: 3}
       propertyPath: m_RootOrder

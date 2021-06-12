@@ -6,6 +6,8 @@ TagManager:
   tags:
   - RedEnemy
   - BlueEnemy
+  - MissBar
+  - Button
   layers:
   - Default
   - TransparentFX
