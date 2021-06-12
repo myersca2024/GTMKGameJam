@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4587926466831638017
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4587926466831638019}
+  - component: {fileID: 4587926466831638018}
+  m_Layer: 0
+  m_Name: RhythmGameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4587926466831638019
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587926466831638017}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4587926466831638018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4587926466831638017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c6d632e037786d45b6822b3ffa76999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  redButton: {fileID: 2641378627713027841, guid: d9860a42aa82a4648a7704c24519452a,
+    type: 3}
+  blueButton: {fileID: 9140436157667594536, guid: 84270473e8115ba4291cf8b73fc61567,
+    type: 3}
+  redArrow: {fileID: 470220145028124002, guid: 46ab08bcc233cb641b84e1503a97d1f9, type: 3}
+  blueArrow: {fileID: 6622655143808589144, guid: 5ef1a09faaaf9cc49b27b5f3b3d96c49,
+    type: 3}
+  filePath: Assets/Scripts/KeyframeFiles/keyframe-testsong.txt
+  scrollSpeed: 4
