@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public Color defaultColor;
+    public Color pressedColor;
+    public KeyCode keyToPress;
+
+    private SpriteRenderer sr;
+
+    private void Start()
     {
-        
+        sr = this.GetComponent<SpriteRenderer>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (Input.GetKeyDown(keyToPress))
+        {
+            sr.color = pressedColor;
+        }
+
+        if (Input.GetKeyUp(keyToPress))
+        {
+            sr.color = defaultColor;
+        }
     }
 }
