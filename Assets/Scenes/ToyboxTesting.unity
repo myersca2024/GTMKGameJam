@@ -252,7 +252,7 @@ PrefabInstance:
     - target: {fileID: 3654234446252235674, guid: eda748ed59b4ceb40a0fa8fe5acda5c3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.62
+      value: 3.440457
       objectReference: {fileID: 0}
     - target: {fileID: 3654234446252235674, guid: eda748ed59b4ceb40a0fa8fe5acda5c3,
         type: 3}
@@ -298,11 +298,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: BlueEnemy
-      objectReference: {fileID: 0}
-    - target: {fileID: 3654234446252235678, guid: eda748ed59b4ceb40a0fa8fe5acda5c3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eda748ed59b4ceb40a0fa8fe5acda5c3, type: 3}
@@ -408,6 +403,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3261745675698866213, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3909237910081489016, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
         type: 3}
       propertyPath: m_RootOrder
@@ -468,9 +468,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: RedEnemy
       objectReference: {fileID: 0}
-    - target: {fileID: 5159120387275399158, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
+    - target: {fileID: 8333887504907503108, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
         type: 3}
-      propertyPath: m_IsActive
+      propertyPath: m_Constraints
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -537,10 +537,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filePath: Assets/Scripts/KeyframeFiles/aggressivegamingmusic-enemy.txt
-  redEnemy: {fileID: 5159120387275399158, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
-    type: 3}
-  blueEnemy: {fileID: 3654234446252235678, guid: eda748ed59b4ceb40a0fa8fe5acda5c3,
-    type: 3}
+  redEnemy: {fileID: 0}
+  blueEnemy: {fileID: 0}
   minX: -8
   maxX: 0
   minY: -4

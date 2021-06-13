@@ -5,13 +5,13 @@ using UnityEngine;
 public class BulletBehavior : MonoBehaviour
 {
     public int damageVal = 4;
-    public float speed = 5f;
     Rigidbody2D bullet;
+    Transform player;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
         bullet = GetComponent<Rigidbody2D>();
-        bullet.velocity = new Vector2(0, -speed);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
