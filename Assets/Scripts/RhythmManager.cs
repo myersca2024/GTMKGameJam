@@ -11,18 +11,21 @@ public class RhythmManager : MonoBehaviour
     public string filePath;
     public float scrollSpeed;
     public AudioSource music;
+    public float theXFactor = 3.1f;
 
     private string[] keyframes;
     private int keyframeIndex = 0;
     private float bpm;
     private float currentTime = 0f;
-    public float topScreen = 7.55f;
+    private float topScreen = 8.622f;
+    private float overheadAmount;
 
     void Start()
     {
         keyframes = System.IO.File.ReadAllLines(@filePath);
         bpm = float.Parse(keyframes[keyframeIndex]);
         keyframeIndex++;
+        overheadAmount = (topScreen * theXFactor) / (bpm * scrollSpeed / 60);
         music.Play();
     }
 
@@ -39,7 +42,7 @@ public class RhythmManager : MonoBehaviour
     void ProcessCurrentLine()
     {
         string[] keyframe = keyframes[keyframeIndex].Split(' ');
-        if (keyframe.Length > 0 && float.Parse(keyframe[0]) <= CurrentBeat())
+        if (keyframe.Length > 0 && float.Parse(keyframe[0]) - overheadAmount <= CurrentBeat())
         {
             //Debug.Log(keyframe[0] + " " + CurrentBeat().ToString());
             for (int ii = 1; ii < keyframe.Length; ii++)
