@@ -403,6 +403,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3261745675698866213, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3909237910081489016, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
         type: 3}
       propertyPath: m_RootOrder
@@ -462,6 +467,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RedEnemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 8333887504907503108, guid: ac4b07b3d8c9e004ca040ddbec188dc8,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ac4b07b3d8c9e004ca040ddbec188dc8, type: 3}
