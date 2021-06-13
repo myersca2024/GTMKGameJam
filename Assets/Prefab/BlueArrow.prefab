@@ -75,7 +75,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 704d36b5907476d43b996a2505f745d7, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.63584906, g: 0.8168714, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -140,4 +140,3 @@ MonoBehaviour:
   canBePressed: 0
   keyToPress: 108
   blast: {fileID: 2986708364736363558, guid: 14ed6e9b267061f47baaaa965e2457af, type: 3}
-  player: {fileID: 0}
