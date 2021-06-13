@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float speed = 5;
     public Rigidbody2D rb;
     public float blockTime = 1f;
+    public Slider healthBar;
 
     string blockType = "";
     float blockTimer = 0f;
@@ -58,6 +60,7 @@ public class PlayerController : MonoBehaviour
     public void TakeDamage(int damageAmount)
     {
         currentHealth -= damageAmount;
+        healthBar.value = currentHealth;
         Debug.Log("Ouch! Current health: " + currentHealth);
         if (currentHealth <= 0)
         {
