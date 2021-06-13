@@ -72,7 +72,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 990c0b4fac732a44b82a0995750cfc72, type: 3}
   m_Color: {r: 0.254539, g: 0.71154124, b: 0.9811321, a: 0.4117647}
   m_FlipX: 0
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd7d15b7e22f68489411f730e0136de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthSpeed: 0.02
-  duration: 0.5
+  growthSpeed: 0.04
+  duration: 0.2
   enemyTag: BlueEnemy
   bulletTag: 
 --- !u!58 &6161377947241217686
