@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthSpeed: 0.04
-  duration: 0.2
+  duration: 0.25
   enemyTag: BlueEnemy
   bulletTag: 
 --- !u!58 &6161377947241217686

@@ -12,6 +12,7 @@ public class RhythmManager : MonoBehaviour
     public float scrollSpeed;
     public AudioSource music;
     public float theXFactor = 3.1f;
+    public static bool gameRunning = true;
 
     private string[] keyframes;
     private int keyframeIndex = 0;
@@ -42,7 +43,7 @@ public class RhythmManager : MonoBehaviour
     {
         currentTime += Time.deltaTime;
         
-        if (keyframeIndex < keyframes.Length)
+        if (gameRunning && keyframeIndex < keyframes.Length)
         {
             ProcessCurrentLine();
         }

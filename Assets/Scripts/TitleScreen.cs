@@ -5,9 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TitleScreen : MonoBehaviour
 {
-    public void PlayGame()
+    public void LoadSong(int song)
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(song);
     }
 
     public void QuitGame()

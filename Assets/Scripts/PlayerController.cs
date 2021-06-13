@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public Rigidbody2D rb;
     public float blockTime = 1f;
     public Slider healthBar;
+    public LevelManager lm;
 
     string blockType = "";
     float blockTimer = 0f;
@@ -46,9 +47,12 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        movement.x = Input.GetAxis("Horizontal");
-        movement.y = Input.GetAxis("Vertical");
-        rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        if (RhythmManager.gameRunning)
+        {
+            movement.x = Input.GetAxis("Horizontal");
+            movement.y = Input.GetAxis("Vertical");
+            rb.MovePosition(rb.position + movement * speed * Time.fixedDeltaTime);
+        }
     }
 
     public void PlayerBlocked(string type)
@@ -64,7 +68,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Ouch! Current health: " + currentHealth);
         if (currentHealth <= 0)
         {
-            Debug.Log("Player Died!!!!!");
+            lm.GameOver();
         }
     }
     
