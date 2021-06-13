@@ -6,6 +6,16 @@ public class NoteBehavior : MonoBehaviour
 {
     public bool canBePressed;
     public KeyCode keyToPress;
+    public GameObject blast;
+    GameObject player;
+
+    private Transform playerTrans;
+    public void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player");
+        playerTrans = player.transform;
+
+    }
 
     void Update()
     {
@@ -14,10 +24,7 @@ public class NoteBehavior : MonoBehaviour
             if (canBePressed)
             {
                 DestroyNote();
-            }
-            else
-            {
-                MissedNote();
+                LevelManager.instance.NoteHit(blast);
             }
         }
     }
@@ -25,32 +32,14 @@ public class NoteBehavior : MonoBehaviour
     void DestroyNote()
     {
         gameObject.SetActive(false);
-    }
-
-    void MissedNote()
-    {
-
+        Destroy(gameObject, .05f);
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Sad");
         if (collision.tag == "Button")
         {
             canBePressed = true;
-        }
-        else if (collision.tag == "MissBar")
-        {
-            MissedNote();
-            DestroyNote();
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.tag == "Button")
-        {
-            canBePressed = false;
         }
     }
 }

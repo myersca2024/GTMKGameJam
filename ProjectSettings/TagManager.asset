@@ -8,6 +8,10 @@ TagManager:
   - BlueEnemy
   - MissBar
   - Button
+  - BlueNote
+  - RedNote
+  - B_Blast
+  - R_Blast
   layers:
   - Default
   - TransparentFX
