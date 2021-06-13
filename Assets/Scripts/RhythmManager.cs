@@ -16,9 +16,10 @@ public class RhythmManager : MonoBehaviour
     private string[] keyframes;
     private int keyframeIndex = 0;
     private float bpm;
-    private float currentTime = 0f;
+    private float currentTime;
     private float topScreen = 8.622f;
     private float overheadAmount;
+    private bool songStarted = false;
 
     void Start()
     {
@@ -26,7 +27,15 @@ public class RhythmManager : MonoBehaviour
         bpm = float.Parse(keyframes[keyframeIndex]);
         keyframeIndex++;
         overheadAmount = (topScreen * theXFactor) / (bpm * scrollSpeed / 60);
+        float fourBeats = 4f / (bpm / 60f);
+        currentTime = 0f - fourBeats;
+        Invoke("Initialize", fourBeats);
+    }
+
+    void Initialize()
+    {
         music.Play();
+        songStarted = true;
     }
 
     void Update()
