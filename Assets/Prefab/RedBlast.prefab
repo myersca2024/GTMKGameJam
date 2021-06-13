@@ -98,6 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   growthSpeed: 0.004
   duration: 2
+  enemyTag: RedEnemy
+  bulletTag: 
 --- !u!58 &2506179944849537530
 CircleCollider2D:
   m_ObjectHideFlags: 0
