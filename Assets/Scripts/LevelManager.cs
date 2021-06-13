@@ -37,4 +37,9 @@ public class LevelManager : MonoBehaviour
     {
         pc.TakeDamage(missDamage);
     }
+
+    public void DealDamage(int damage) 
+    {
+        pc.TakeDamage(damage);
+    }
 }
