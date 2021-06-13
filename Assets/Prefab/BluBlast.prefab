@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd7d15b7e22f68489411f730e0136de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  growthSpeed: 0.004
-  duration: 2
+  growthSpeed: 0.02
+  duration: 0.5
   enemyTag: BlueEnemy
   bulletTag: 
 --- !u!58 &6161377947241217686
